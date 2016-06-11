@@ -15,72 +15,58 @@
     
     <body>
         
-        <nav class="navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="">E-commerce</a>
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">E-commerce</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Canasta</a></li>
+                          <li><a href="#">Salir</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span>Canasta</a></li>
-                    <li><a href="">Salir</a></li>
-                  </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         
         <div class="container">
+            
             <div class="row">
-                <div class="col-md-3">
+                
+                <aside class="col-md-3">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Buscar camisetas">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span>
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
                             </button>
                         </span>
                     </div>
-                    <h1><strong>Categorias</strong></h1>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                              <td class="btn-primary">Todos<span class="badge pull-right">100</span></td>
-                            </tr>
-                            <tr>
-                              <td>Hombre<span class="badge pull-right">4</span></td>
-                            </tr>
-                            <tr>
-                              <td>Mujer<span class="badge pull-right">12</span></td>
-                            </tr>
-                            <tr>
-                              <td>Hipster<span class="badge pull-right">24</span></td>
-                            </tr>
-                            <tr>
-                              <td>Metal<span class="badge pull-right">6</span></td>
-                            </tr>
-                            <tr>
-                              <td>Universidad<span class="badge pull-right">5</span></td>
-                            </tr>
-                            <tr>
-                              <td>Deportiva<span class="badge pull-right">8</span></td>
-                            </tr>
-                            <tr>
-                              <td>Rayas<span class="badge pull-right">11</span></td>
-                            </tr>
-                            <tr>
-                              <td>Apretada<span class="badge pull-right">19</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-9">
+                    <div class="list-group hidden-xs hidden-sm">
+                        <a href="#" class="list-group-item active"><span class="badge">100</span>Todos</a>
+                        <a href="#" class="list-group-item"><span class="badge">4</span>Hombre</a>
+                        <a href="#" class="list-group-item"><span class="badge">12</span>Mujer</a>
+                        <a href="#" class="list-group-item"><span class="badge">24</span>Hipster</a>
+                        <a href="#" class="list-group-item"><span class="badge">6</span>Metal</a>
+                        <a href="#" class="list-group-item"><span class="badge">5</span>Unersidad</a>
+                        <a href="#" class="list-group-item"><span class="badge">8</span>Deportiva</a>
+                        <a href="#" class="list-group-item"><span class="badge">11</span>Rayas</a>
+                        <a href="#" class="list-group-item"><span class="badge">16</span>Apretada</a>
+                    </div>
+                </aside>
+                
+                <section class="col-md-9">
+                    
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="avtive"></li>
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
                         </ol>
@@ -104,65 +90,64 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
+                    
                     <div class="row">
-                        <div class="col-xs-6 col-md-4">
+                        <div class="col-xs-6 col-sm-6 col-md-4">
                             <img src="images/camiseta-1.jpg" class="img-responsive" alt="camiseta1">
                             <h4>Hipster Ultimate</h4>
                             <p>La camiseta ideal para hipsters.</p>
-                            <button class="btn btn-primary" type="button">
-                                <strong>$229</strong><span class=" glyphicon glyphicon-shopping-cart"></span>
+                            <button type="button" class="btn btn-primary"><strong>$229</strong><span class="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                            <button class="btn btn-default" type="button">
+                            <button type="button" class="btn btn-default">
                                 Detalles
                             </button>
                         </div>
-                        <div class="col-xs-6 col-md-4">
+                        <div class="col-xs-6 col-sm-6 col-md-4">
                             <img src="images/camiseta-2.jpg" class="img-responsive" alt="camiseta2">
                             <h4>On Motion Live</h4>
                             <p>Perfecta para salidas rocosas.</p>
-                            <button class="btn btn-primary" type="button">
-                                <strong>$229</strong><span class=" glyphicon glyphicon-shopping-cart"></span>
+                            <button type="button" class="btn btn-primary"><strong>$229</strong><span class="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                            <button class="btn btn-default" type="button">
+                            <button type="button" class="btn btn-default">
                                 Detalles
                             </button>
                         </div>
-                        <div class="col-xs-6 col-md-4">
+                        <div class="col-xs-6 col-sm-6 col-md-4">
                             <img src="images/camiseta-3.jpg" class="img-responsive" alt="camiseta3">
                             <h4>Underground Max</h4>
-                            <p>Para los amantes del underground.</p>
-                            <button class="btn btn-primary" type="button">
-                                <strong>$229</strong><span class=" glyphicon glyphicon-shopping-cart"></span>
+                            <p>Para los amantes del Underground.</p>
+                            <button type="button" class="btn btn-primary"><strong>$229</strong><span class="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                            <button class="btn btn-default" type="button">
+                            <button type="button" class="btn btn-default">
                                 Detalles
                             </button>
                         </div>
-                        <div class="col-xs-6 col-md-4">
+                        <div class="col-xs-6 col-sm-6 col-md-4">
                             <img src="images/camiseta-4.jpg" class="img-responsive" alt="camiseta4">
-                            <h4>Santo Domingo Tigers</h4>
-                            <p>La de los conciertos.</p>
-                            <button class="btn btn-primary" type="button">
-                                <strong>$229</strong><span class=" glyphicon glyphicon-shopping-cart"></span>
+                            <h4>Maxim Concert</h4>
+                            <p>Perfecta para los conciertos.</p>
+                            <button type="button" class="btn btn-primary"><strong>$229</strong><span class="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                            <button class="btn btn-default" type="button">
+                            <button type="button" class="btn btn-default">
                                 Detalles
                             </button>
                         </div>
-                        <div class="col-xs-6 col-md-4">
-                            <img src="images/camiseta-5.jpg" class="img-responsive" alt="camiseta5">
-                            <h4>Hot Soccer</h4>
-                            <p>La Champions.</p>
-                            <button class="btn btn-primary" type="button">
-                                <strong>$229</strong><span class=" glyphicon glyphicon-shopping-cart"></span>
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <img src="images/camiseta-5.jpg" class="img-responsive" alt="camiseta4">
+                            <h4>Sport Fire</h4>
+                            <p>No importa el equipo.</p>
+                            <button type="button" class="btn btn-primary"><strong>$229</strong><span class="glyphicon glyphicon-shopping-cart"></span>
                             </button>
-                            <button class="btn btn-default" type="button">
+                            <button type="button" class="btn btn-default">
                                 Detalles
                             </button>
                         </div>
                     </div>
-                </div>
+                    
+                </section>
+                
             </div>
+                 
         </div>
         
     </body>
