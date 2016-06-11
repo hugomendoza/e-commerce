@@ -22,7 +22,7 @@ img {
     width: 100%;
 }
 
-@media only screen and (min-width:480px) and (max-width: 768px) {
+@media only screen and (min-width:320px) and (max-width: 768px) {
     .row {
         padding: 0px;
     }
